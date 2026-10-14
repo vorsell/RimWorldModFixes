@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <!-- Both versions intentionally share the build compiled against RimWorld 1.6. -->
+  <v1.6>
+    <li>1.6</li>
+  </v1.6>
+  <v1.7>
+    <li>1.6</li>
+  </v1.7>
+  <!-- After upstream repair is verified, change only the affected version's
+       entry from 1.6 to Inactive. This prevents its DLL from loading. -->
+</loadFolders>

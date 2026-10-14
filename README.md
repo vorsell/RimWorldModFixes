@@ -1,6 +1,6 @@
 # RimWorld Compatibility Fixes
 
-A private source archive containing four small RimWorld 1.6 compatibility and behavior fixes:
+A private source archive containing four small RimWorld compatibility and behavior fixes:
 
 - **MoeLotl: Rigor Mortis - Float Menu Fix** — reduces repeated expensive float-menu checks and preloads affected incantation graphics. [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3783214874)
 - **Milira: Wings of Democracy - Float Menu Fix** — filters unrelated WorkGiver checks, removes duplicate menu work, and caches repeated storage searches. [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3783936979)
@@ -8,6 +8,12 @@ A private source archive containing four small RimWorld 1.6 compatibility and be
 - **MoeLotl Settlement Trade Faction Fix** — assigns traded MoeLotls to the correct faction and includes optional Real Faction Guest compatibility. [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3783743602)
 
 Each subdirectory is a standalone RimWorld mod. See its `About/About.xml` for dependencies, load order, and full details.
+
+## Float-menu fixes: RimWorld 1.7 support
+
+The Rigor Mortis, Milira Race, and Wings of Democracy float-menu fixes declare support for RimWorld 1.6 and 1.7. Their existing DLLs were retained after manual 1.7 gameplay checks; this update changes the version declarations and load routing, not the patch code or binaries.
+
+On either game version, each fix loads its root package when Float Menu Performance Optimizer is absent. When the optimizer is active, the standalone fix selects `Inactive` and does not load its DLL, allowing the integrated module to take over without duplicate patches. Keep `Inactive/Strings/Inactive.txt` in the package.
 
 ## Workstation workflow
 

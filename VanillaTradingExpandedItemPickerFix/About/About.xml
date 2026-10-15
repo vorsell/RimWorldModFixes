@@ -25,9 +25,23 @@
   </loadAfter>
   <description><![CDATA[优化 Vanilla Trading Expanded 期货合约的物品选择窗口，减少打开、搜索和滚动大型物品列表时的卡顿。
 
+上游核查记录：截至 VTE 于 2026-10-14 20:40:05（UTC+8）发布的更新，该窗口仍未加入排序缓存、仅在搜索词变化时筛选及仅绘制可见物品行的优化。本次上游更新新增 1.7 支持声明和加载路径，仍使用原有的 1.6 DLL，本补丁仍有保留的必要。
+
+核查文件：1.6/Assemblies/VanillaTradingExpanded.dll
+本地文件修改时间：2026-09-11 19:49:49（UTC+8）
+SHA-256：F00479D1857B3B45FC7F792A5C0BD769F9F57C625B97663A461E1E925E1E6D15
+文件时间不代表编译时间；SHA-256 用于识别本次核查的文件内容。此记录不代表未来版本的核查结论。
+
 代码由 Codex 协助编写。
 
 Optimizes the Vanilla Trading Expanded futures contract item picker, reducing lag when opening, searching, and scrolling large item lists.
+
+Upstream status: As of the VTE update published on 2026-10-14 at 12:40:05 (UTC+0), this window still lacks cached sorting, filtering only when the search text changes, and visible-row rendering. That update added the 1.7 support declaration and load routing while retaining the existing 1.6 DLL. This patch therefore remains relevant.
+
+Inspected file: 1.6/Assemblies/VanillaTradingExpanded.dll
+Local file modification time: 2026-09-11 at 11:49:49 (UTC+0)
+SHA-256: F00479D1857B3B45FC7F792A5C0BD769F9F57C625B97663A461E1E925E1E6D15
+The file timestamp is not a compilation timestamp; the SHA-256 identifies the inspected file contents. This record does not establish the status of future versions.
 
 Code written with assistance from Codex.
 ]]></description>
